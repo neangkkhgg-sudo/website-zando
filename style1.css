@@ -1,0 +1,454 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-container-full{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.header-container{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu{
+    width: 35%;
+    height: 100%;
+    /*background-color: antiquewhite;*/
+    float: left;
+}
+ ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ ul li{
+    float: left;
+}
+
+ ul li a{
+    display: block;
+    padding: 20px ;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    /*background-color: aquamarine;*/
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 70%;
+
+}
+
+.register ul li{
+    float: right;
+}
+
+ul li a:hover{
+    transform: scale(1.1);
+}
+
+.Homepage{
+    width: 75%;
+    height: 550px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    background-image: url('image/banner.jpeg');
+}
+
+.button-homepage{
+    width: 300px;
+    height: 50px;
+    transform: translateY(470px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: yellow;*/
+}
+/* From Uiverse.io by SujitAdroja */ 
+.btn {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px ;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: rgb(64, 170, 43);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: purple;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+
+.brand-container{
+   
+    width: 75%;
+    height: 100px;
+    margin: 40px auto;
+    /*background-color: white;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-container .box-brand{
+    width: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-container .box-brand img{
+    width: 80%;
+}
+
+
+.featured_prd{
+    width: 75%;
+   /* height: 450px;*/
+   overflow: hidden;
+   /* background-color: beige;*/
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.featured_prd .box-image{
+    width: 32%;
+    height: 450px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.featured_prd .box-image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.featured_prd .box-image img:hover{
+    transform: scale(1.1);
+}
+
+.featured_prd .box-image:nth-child(4) , .box-image:nth-child(5){
+    width: 49%;
+}
+
+.All-Product{
+    width: 75%;
+    overflow: hidden;
+    margin: 15px auto;
+}
+
+.All-Product h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.container-product{
+    width: 100%;
+    height: 500px ;
+    /*background-color: gray;*/
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-item{
+    width: 25%;
+    height: 100%;
+   /* background-color: aquamarine;*/
+}
+
+
+.card-item .image{
+    width: 100%;
+    height: 80%;
+
+}
+
+.card-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-item .description{
+    width: 100%;
+    height: 20%;
+}
+
+.card-item .description p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 10px 10px;
+}
+
+.card-item .description p del{
+    margin-right: 10px;
+    color: red;
+}
+
+ .card-item .discount{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    /*top: 10px;
+    left: 10px;*/
+    padding: 2px 5px;
+    transform: translate(10px,10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.page-detail{
+    width: 75%;
+    overflow: hidden;
+    margin: 15px auto;
+    background-color: aliceblue;
+}
+
+.box-image-preview{
+    width: 50%;
+    height: 580px;
+   /* background-color: green;*/
+    float: left;
+}
+
+.box-image-preview .small-img{
+    width: 18%;
+    height: 100px;
+    float: left;
+   /* background-color: rgb(204, 188, 188);*/
+}
+
+.box-image-preview .small-img .image-item{
+    width: 100%;
+    height: 110px;
+    /*border: 1px solid black;*/
+    margin-top: 5px;
+}
+
+
+.box-image-preview .small-img .image-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-image-preview .big-img{
+    width: 80%;
+    height: 500px;
+    background-color: rgb(231, 215, 215);
+    float: left;
+    /*margin-top: 5px;*/
+    margin-left: 2%;
+
+}
+
+.box-image-preview .big-img .big-image-item{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid black;*/
+}
+
+.box-image-preview .big-img .big-image-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-product-infor{
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    
+}
+
+.box-product-infor .price h3 del{
+    margin-right: 10px;
+    color: red;
+}
+
+.price{
+    width: 90%;
+    height: 60px;
+    margin: auto;
+}
+
+.price h3, p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.price p{
+    margin-top: 0;
+   
+}
+
+.price h3{
+    font-size: 20px;
+    color: rgb(21, 117, 21);
+}
+
+.prd-color{
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    /*background-color: brown;*/
+}
+
+.prd-color h3{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #181717;
+    font-weight: bold;
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+.prd-color .image-color-preview{
+    margin-top: 10px;
+    width: 80px;
+    height: 90%;
+    border: 1px solid black;
+}
+
+.prd-color .image-color-preview img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-color-preview .color{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    transform: translate(5px ,5px);
+    border-radius: 50%;
+    font-size: 8px;
+}
+
+.prd-size{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+}
+
+.prd-size h3{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1a0505;
+    font-weight: bold;
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+.size-option{
+    width: 100%;
+    height: 50px;
+   /* background-color: rgba(128, 128, 128, 0.397);*/
+}
+
+.size-option .size{
+    width: 40px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.281);
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.size-option .size:hover{
+    transform: scale(110%);
+}
+
+.addcart-button{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    /*background-color: orangered;*/
+    margin-top: 5px;
+}
+
+.favorite{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    float: left;
+}
